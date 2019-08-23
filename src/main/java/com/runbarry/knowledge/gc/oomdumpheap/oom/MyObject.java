@@ -1,4 +1,4 @@
-package com.runbarry.knowledge.gc.oomdumphdeap;
+package com.runbarry.knowledge.gc.oomdumpheap.oom;
 
 /**
  * @author xbuding

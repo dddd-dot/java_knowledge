@@ -1,4 +1,4 @@
-package com.runbarry.knowledge.gc.oomdumphdeap;
+package com.runbarry.knowledge.gc.oomdumpheap.oom;
 
 import lombok.extern.slf4j.Slf4j;
 
