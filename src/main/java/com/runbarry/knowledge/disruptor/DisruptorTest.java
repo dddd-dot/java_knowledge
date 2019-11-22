@@ -116,7 +116,8 @@ public class DisruptorTest {
 
     public static void main(String[] args) {
         String message = "Hello Disruptor!";
-        int ringBufferSize = 1024;//必须是2的N次方
+        //必须是2的N次方
+        int ringBufferSize = 1024;
         Disruptor<MessageEvent> disruptor = new Disruptor<>(new MessageEventFactory(), ringBufferSize, new MessageThreadFactory(),
                 ProducerType.SINGLE, new BlockingWaitStrategy());
         disruptor.handleEventsWith(new MessageEventHandler());
