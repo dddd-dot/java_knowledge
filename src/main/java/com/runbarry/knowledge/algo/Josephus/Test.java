@@ -1,4 +1,4 @@
-package com.java.test.algo.Josephus;
+package com.runbarry.knowledge.algo.Josephus;
 
 
 import lombok.extern.slf4j.Slf4j;
@@ -27,7 +27,9 @@ public class Test {
             temp.setNext(person);
             temp = person;
         }
+        // 首尾关联
         temp.setNext(head.getNext());
+        // 2、获取从第几位开始
         Person startPerson;
         for (; ; ) {
             if (head.getNext().getIndex() == startIndex) {
@@ -38,6 +40,7 @@ public class Test {
             }
         }
         int round = 1;
+        // 3、开始 game
         while (startPerson.getNext() != startPerson) {
             for (int i = 1; i < count - 1; i++) {
                 startPerson = startPerson.getNext();
