@@ -79,7 +79,7 @@ public class QuickSort {
      * @param left
      * @param right
      */
-    public static void quickSort2(int[] arr, int left, int right) {
+    public static void quickSort2(int[] arr, final int left, final int right) {
         if (left >= right) {
             return;
         }
