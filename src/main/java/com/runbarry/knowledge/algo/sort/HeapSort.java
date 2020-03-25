@@ -137,7 +137,7 @@ public class HeapSort {
      */
     @Test
     public void testPriorityMiniHeap() {
-        int[] arrForHeap = {3, 5, 2, 7, 0, 1, 6, 4};
+        int[] arrForHeap = {35, 45, 25, 50, 30, 40, 15, 20, 10};
         Queue<Integer> minHeap = new PriorityQueue<>();
         for (Integer integer : arrForHeap) {
             minHeap.add(integer);
